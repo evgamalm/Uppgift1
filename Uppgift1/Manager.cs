@@ -83,20 +83,17 @@
         }
 
 
-        public  void PrintAll()
+        public void PrintAll()
+        {           
+            int i = 1;
+            people.ForEach(p => Console.WriteLine($"{i++} {p.ReturnPersonDetails}"));                               
+        }
+
+        public void Print(Person p)
         {
-            
-                // varför får når jag inte people? 
-                int i = 0;
-                people.ForEach(delegate (Person person)
-                {
 
-                    i++;
-                    Console.WriteLine(i + ". " + person.ReturnPersonDetails);
-                });
-            
-
-            Console.WriteLine("print");
+           Console.WriteLine(p.ReturnPersonDetails);
+           
         }
     }
 }

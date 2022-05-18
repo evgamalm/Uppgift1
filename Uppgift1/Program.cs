@@ -15,12 +15,6 @@ namespace Uppgift1
             Console.ReadLine();
                                                      
         }
-
-        
-            
-            
-        
-            
-                        
+                                                                          
     }
 }
